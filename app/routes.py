@@ -22,4 +22,4 @@ def display_result(pokemon_id):
     url="https://pokeapi.co/api/v2/pokemon/{}".format(pokemon_id.lower())
     connector=api_connector.connect(url)
     pokemon=Pokemon(connector)
-    return {"name":pokemon.name,"id":pokemon.id,"default":pokemon.is_default,"abilities":pokemon.abilities,"height":pokemon.height,"base_exp":pokemon.base_experience,"weight":pokemon.weight,"types":pokemon.types}###Pokemon definieren
+    return {"name":pokemon.name,"id":pokemon.id,"default":pokemon.is_default,"abilities":pokemon.abilities,"height":pokemon.height,"base_exp":pokemon.base_experience,"weight":pokemon.weight,"types":pokemon.types}
