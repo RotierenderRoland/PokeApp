@@ -1,7 +1,5 @@
 from flask import render_template
-from matplotlib.pyplot import title
 from app import app
-from app import connector
 from app.forms import SearchForm
 from app.connector import Pokemon, api_connector
 

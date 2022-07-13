@@ -12,8 +12,7 @@
                 {% block content %}
                 <form class="d-flex" action="" method="post" novalidate>
                         {{ form.hidden_tag() }}
-                        {{ form.pokemon.label(class="form-label text-light") }}
-                        {{ form.pokemon(class="form-controll me-2") }}
+                        {{ form.pokemon(class="form-controll me-2",placeholder="Pokemon name or ID ") }}
                         {{form.submit(class="btn btn-primary")}}  
                         {% for error in form.pokemon.errors %}
                         <span style="color: red;">[{{ error }}]</span>
