@@ -6,7 +6,7 @@
     </head>
 </html>
 
-<body>
+<body style="background-color: rgb(230, 226, 220);" class="text-dark">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid justify-content-end">
                 {% block content %}
@@ -22,4 +22,6 @@
             {% endblock %}
         </div>
       </nav>
+      {% block results %}
+      {% endblock %}           
 </body>

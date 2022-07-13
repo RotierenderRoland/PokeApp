@@ -14,11 +14,11 @@ class api_connector:
 class Pokemon:
     def __init__(self,response):
         self.id=response["id"]
-        self.name=response["species"]["name"]
-        self.is_default=response["is_default"]
-        self.abilities=[response["abilities"][i]["ability"]["name"]for i in range(len(response["abilities"]))]
+        self.name=response["species"]["name"].capitalize()
+        self.abilities=[response["abilities"][i]["ability"]["name"].capitalize()for i in range(len(response["abilities"]))]
         self.height=response["height"]
         self.base_experience=response["base_experience"]
         self.weight=response["weight"]
-        self.types=[response["types"][i]["type"]["name"]for i in range(len(response["types"]))]
+        self.types=[response["types"][i]["type"]["name"].capitalize()for i in range(len(response["types"]))]
+        self.portrait=response["sprites"]["other"]["official-artwork"]["front_default"]
         

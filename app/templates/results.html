@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+{{ super() }}
+{% endblock %}
+{% block results %}    
+    <div style="text-align:center;"><h1>{{name}}</h1> #{{id}}
+    </div>
+    <img style = "display:block; margin-left: auto; margin-right: auto; width: auto;height: 30%;"src="{{portrait}}" alt="{{name}}">
+    <br>
+    <div style="margin-left: auto; margin-right: auto;" class="border border-dark rounded">
+        <ul style="text-align:center;"class="list-group">
+            <li class="list-group-item">Types: {{types}}</li>
+            <li class="list-group-item">Abilities: {{abilities}}</li>
+            <li class="list-group-item">Height: {{height}}</li>
+            <li class="list-group-item">Weight: {{weight}}</li>
+            <li class="list-group-item">Base experience: {{base_exp}}</li>
+          </ul>    
+    </div>
+{% endblock %}   
+</div>
